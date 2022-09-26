@@ -17,5 +17,4 @@ class DrivingLicenceIdGenerationServiceTest {
                 .isEqualTo(UUID.fromString(actual.toString()));
     }
 
-
 }
