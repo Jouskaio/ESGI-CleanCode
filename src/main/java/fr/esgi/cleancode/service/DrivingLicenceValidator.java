@@ -18,6 +18,9 @@ public class DrivingLicenceValidator {
         return true;
     }
 
+    public DrivingLicence createDriverLicence() {
+
+    }
 
 
 }
