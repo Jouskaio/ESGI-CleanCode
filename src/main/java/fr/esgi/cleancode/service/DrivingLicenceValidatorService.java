@@ -5,8 +5,8 @@ import fr.esgi.cleancode.model.DrivingLicence;
 
 import java.util.regex.Pattern;
 
-public class DrivingLicenceValidator {
-    public static boolean checkSecurityNumber(DrivingLicence drivingLicence) throws InvalidDriverSocialSecurityNumberException {
+public class DrivingLicenceValidatorService {
+    public boolean check_security_number(DrivingLicence drivingLicence) throws InvalidDriverSocialSecurityNumberException {
         var actual = drivingLicence.getDriverSocialSecurityNumber();
         if(actual == null) {
             throw  new InvalidDriverSocialSecurityNumberException("Null");
@@ -17,10 +17,5 @@ public class DrivingLicenceValidator {
         }
         return true;
     }
-
-    public DrivingLicence createDriverLicence() {
-
-    }
-
 
 }
